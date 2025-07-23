@@ -19,7 +19,7 @@ st.set_page_config(
 # LOAD ARTIFACTS
 # ==============================================================================
 # This should be the path to your LGBM artifact file
-ARTIFACT_PATH = 'image_classifier_artifacts_v2.joblib'
+ARTIFACT_PATH = 'image_classifier_artifacts_v1.joblib'
 
 @st.cache_resource
 def load_artifacts(path):
