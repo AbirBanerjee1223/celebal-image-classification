@@ -26,11 +26,12 @@ The project includes scripts for data preprocessing, feature extraction (HOG and
 ├── caltech_10_classes_augmented/ # Auto-generated balanced dataset
 │
 ├── image_classifier_artifacts_v1.joblib  # Artifacts for the 15-class LGBM model
-├── image_classifier_artifacts_v1_balanced.joblib # Artifacts for the final 10-class RF model
+├── image_classifier_artifacts_v4_balanced.joblib # Artifacts for the final 10-class RF model
 │
 ├── app.py                      # Main Streamlit app for the best model (RandomForest)
-├── app_lgbm.py                 # Secondary Streamlit app for the LGBM model
+├── app_lgb.py                 # Secondary Streamlit app for the LGBM model
 ├── model_setup.ipynb        # The complete script for augmentation and training
+├── requirements.txt            # All required Python packages
 └── README.md                   # This file
 ```
 
@@ -43,7 +44,7 @@ To get this project running locally, follow these steps.
 **1. Clone the repository (if applicable):**
 
 ```bash
-git clone (https://github.com/AbirBanerjee1223/celebal-image-classification)
+git clone https://github.com/AbirBanerjee1223/celebal-image-classification
 cd celebal-image-classification
 ```
 
