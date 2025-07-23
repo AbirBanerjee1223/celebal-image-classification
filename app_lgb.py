@@ -94,11 +94,11 @@ if artifacts:
         """
         - **Model Type:** LightGBM (LGBM)
         - **Features:** HOG (Histogram of Oriented Gradients)
-        - **Classes:** 15
+        - **Classes:** 6
         """
     )
     class_names = list(label_encoder.classes_)
-    with st.sidebar.expander("Show All 15 Identifiable Classes"):
+    with st.sidebar.expander("Show All 6 Identifiable Classes"):
         st.write(class_names)
 else:
     st.sidebar.error("Model artifacts not loaded.")
@@ -107,7 +107,7 @@ else:
 # MAIN PAGE INTERFACE
 # ==============================================================================
 st.title("LightGBM Image Classifier")
-st.write("Upload an image to classify it into one of the 15 trained categories using a HOG-based model.")
+st.write("Upload an image to classify it into one of the 6 trained categories using a HOG-based model.")
 
 if not artifacts:
     st.warning("Application is not operational because the model artifacts could not be loaded.")
